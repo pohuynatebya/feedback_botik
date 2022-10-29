@@ -44,7 +44,7 @@ TEXT = """<b>
 markup = InlineKeyboardMarkup(row_width=2)
 
 markup.add(
-	InlineKeyboardButton(text='⭐ Owner', url='https://t.me/xdsxde'),
+	InlineKeyboardButton(text='⭐ Owner', url='https://t.me/kamolgks'),
 
 		)
 
