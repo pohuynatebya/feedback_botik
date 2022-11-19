@@ -41,12 +41,14 @@ TEXT = """<b>
 </b>
 """
 
-markup = InlineKeyboardMarkup(row_width=2)
-
-markup.add(
-	InlineKeyboardButton(text='⭐ Owner', url='https://t.me/kamolgks'),
-
-		)
+def get_menu(menu_name):
+	match menu_name:
+		case 'startmenu':
+			buttons = [
+				types.InlineKeyboardButton(text='⭐️Owner', url='https://t.me/kamolgks'),
+				types.InlineKeyboardButton(text='☕️Github', url='https://github.com/kamolgks),
+				types.InlineKeyboardButton(text='😼Tg bio', url='https://t.me/kamolgks_bio'),
+			]
 
 class st(StatesGroup):
 	item = State()
@@ -59,10 +61,10 @@ class st(StatesGroup):
 async def process_start_command(message: types.Message):
 	print(f"Bot started by: {message.from_user.id}")
 	await message.answer_video(
-		video="https://te.legra.ph/file/d5b5ede65cef3f9707934.mp4", 
+		video="https://te.legra.ph/file/79daf5a219e88b907375b.mp4", 
 		caption='🪄 Welcome to my feedback bot, You may contact with me\n▫️Write your message and my host will answer you!\n▫️Please read /nometa',
 		parse_mode= 'HTML',
-		reply_markup=markup,
+		reply_markup=get_menu('startmenu'),
 	)
 
 @dp.message_handler(commands=['login'])
