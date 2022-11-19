@@ -46,7 +46,7 @@ def get_menu(menu_name):
 		case 'startmenu':
 			buttons = [
 				types.InlineKeyboardButton(text='⭐️Owner', url='https://t.me/kamolgks'),
-				types.InlineKeyboardButton(text='☕️Github', url='https://github.com/kamolgks),
+				types.InlineKeyboardButton(text='☕️Github', url='https://github.com/kamolgks'),
 				types.InlineKeyboardButton(text='😼Tg bio', url='https://t.me/kamolgks_bio'),
 			]
 
