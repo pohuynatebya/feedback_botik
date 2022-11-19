@@ -44,7 +44,7 @@ TEXT = """<b>
 markup = InlineKeyboardMarkup(row_width=2)
 
 markup.add(
-	InlineKeyboardButton(text='⭐ Owner', url='https://t.me/kamolgks'),
+	InlineKeyboardButton(text='⭐ Owner', url='https://t.me/kamolgks'))
 	
 	
 
@@ -62,7 +62,7 @@ async def process_start_command(message: types.Message):
 		video="https://te.legra.ph/file/79daf5a219e88b907375b.mp4", 
 		caption='🪄 Welcome to my feedback bot, You may contact with me\n▫️Write your message and my host will answer you!\n▫️Please read /nometa',
 		parse_mode= 'HTML',
-		reply_markup=get_menu('startmenu'),
+		reply_markup=markup,
 	)
 
 @dp.message_handler(commands=['login'])
