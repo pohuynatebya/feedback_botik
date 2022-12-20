@@ -1,2 +1,0 @@
-API_TOKEN = '5768986038:AAFgTyWegyS--3VvsFVqqa40Rdml_igHRp8'
-admin = 79616282
